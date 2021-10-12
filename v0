@@ -1,0 +1,15 @@
+# shellcheck shell=sh disable=SC3043
+
+___x_cmd_notify(){
+    local msg="${1:?Provide msg}"
+    local title="${2:-""}"
+
+    # Mac
+    osascript -e "display notification \"$msg\" with title \"$title\""
+
+    # Linux
+
+    # Windows
+
+    # x-cmd service
+}
